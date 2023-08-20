@@ -1,0 +1,45 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    margin: 0 auto;
+    display: inline-block;
+    background-color: black;
+    padding: 0.3em;
+    
+}
+.result-space {
+    text-align: end;
+    background-color: rgb(160, 155, 155);
+    padding: 0.8em 0.5em;
+    font-size: 2.1em;
+}
+.operation-area {
+    margin-top: 0.2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.17em;
+}
+.operation-area button {
+    font-size: 1.5em;
+    padding: 1.3em 1.3em;
+    border: none;
+    border-radius: 0.5em;
+}
+.special-operators {
+    background-color: rgb(22, 22, 201);
+}
+
+.operator {
+    background-color: rgb(235, 179, 74);
+}
+.operand {
+    background-color: rgb(4, 107, 4);
+}
+.zero-operand {
+    grid-column: span 2;
+}
