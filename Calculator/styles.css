@@ -40,6 +40,3 @@ body {
 .operand {
     background-color: rgb(4, 107, 4);
 }
-.zero-operand {
-    grid-column: span 2;
-}

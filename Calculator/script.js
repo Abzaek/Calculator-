@@ -51,7 +51,10 @@ document.addEventListener('DOMContentLoaded', function() {
         var expression = resultSpace.textContent;
         var result = eval(expression); 
         resultSpace.textContent = result.toString();
-      } else {
+      } else if (value === "") {
+        resultSpace.textContent += " ";
+      }
+      else {
         if (resultSpace.textContent === '0') {
           resultSpace.textContent = value;
         } else {
